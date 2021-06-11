@@ -1,0 +1,12 @@
+p{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    left: 880px;
+    top: 300px;
+    background-color: limegreen;
+    color: linen;
+    font-size: 200px;
+    text-align: center;
+    border-radius: 70px;
+}

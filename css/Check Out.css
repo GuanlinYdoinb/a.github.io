@@ -1,0 +1,273 @@
+.topbar {
+    background-color: rgb(255, 236, 131);
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0
+}
+
+#help {
+    border: rgba(255, 236, 131, 0.8);
+    background-color: rgb(255, 236, 131);
+    padding: 10.5px 10px;
+    position: absolute;
+    right: 625.672px;
+}
+
+#login {
+    border: rgba(255, 236, 131, 0.8);
+    background-color: rgba(255, 236, 131);
+    padding: 10.5px 10px;
+    position: absolute;
+    right: 567.063px;
+}
+
+#chart {
+    border: rgba(255, 236, 131, 0.8);
+    background-color: rgba(255, 0, 0);
+    padding: 10.5px 10px;
+    position: absolute;
+    right: 512px;
+}
+
+#help:hover {
+    background-color: snow;
+}
+
+#help:active {
+    background-color: tomato;
+    color: white;
+}
+#login:hover {
+    background-color: snow;
+}
+
+#login:active {
+    background-color: tomato;
+    color: white;
+}
+#chart:hover {
+    background-color: snow;
+}
+
+#chart:active {
+    background-color: tomato;
+    color: white;
+}
+
+.box1 {
+    background-color: whitesmoke;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    top: 40px;
+    left: 0px;
+    position: absolute;
+}
+
+.box1 img {
+    position: absolute;
+    height: 60px;
+    margin-top: 5px;
+    left: 512px;
+}
+
+.box1 input {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    margin-left: 1086px;
+    margin-top: 20px;
+}
+
+.box1 button {
+    position: absolute;
+    width: 70px;
+    height: 36px;
+    margin-left: 1410px;
+    margin-top: 20px;
+}
+
+.box2 {
+    position: absolute;
+    top: 110px;
+    left: 958.14px;
+    height: 40px;
+    width: 100%;
+
+}
+
+.box2 button {
+    height: 40px;
+    border: white;
+    background-color: white;
+}
+
+.box2 button:hover {
+    background-color: whitesmoke;
+}
+
+.box2 button:active {
+    background-color: lightgray;
+}
+
+.h11{
+    position: absolute;
+    top: 150px;
+    background-color: whitesmoke;
+    width: 1280px;
+    left: 640px;
+}
+
+.F{
+    position: absolute;
+    top: 230px;
+    left: 640px;
+    font-size: 20px;
+}
+
+.Fi{
+    position: absolute;
+    top: 280px;
+    left: 640px;
+    height: 30px;
+    width: 500px;
+}
+
+.L{
+    position: absolute;
+    top: 230px;
+    left: 1280px;
+    font-size: 20px;
+}
+
+.Li{
+    position: absolute;
+    top: 280px;
+    left: 1280px;
+    height: 30px;
+    width: 500px;
+}
+
+.A1{
+    position: absolute;
+    top: 320px;
+    left: 640px;
+    font-size: 20px;
+}
+
+.A1i{
+    position: absolute;
+    top: 370px;
+    left: 640px;
+    height: 30px;
+    width: 500px;
+}
+
+.A2{
+    position: absolute;
+    top: 320px;
+    left: 1280px;
+    font-size: 20px;
+}
+
+.A2i{
+    position: absolute;
+    top: 370px;
+    left: 1280px;
+    height: 30px;
+    width: 500px;
+}
+
+.S{
+    position: absolute;
+    top: 410px;
+    left: 640px;
+    font-size: 20px;
+}
+
+.Si{
+    position: absolute;
+    top: 460px;
+    left: 640px;
+    height: 30px;
+    width: 300px;
+}
+
+.P{
+    position: absolute;
+    top: 410px;
+    left: 980px;
+    font-size: 20px;
+}
+
+.Pi{
+    position: absolute;
+    top: 460px;
+    left: 980px;
+    height: 30px;
+    width: 200px;
+}
+
+.St{
+    position: absolute;
+    top: 410px;
+    left: 1220px;
+    font-size: 20px;
+}
+
+.Sti{
+    position: absolute;
+    top: 460px;
+    left: 1220px;
+    height: 30px;
+    width: 200px;
+}
+
+.C{
+    position: absolute;
+    top: 410px;
+    left: 1460px;
+    font-size: 20px;
+}
+
+.Ci{
+    position: absolute;
+    top: 460px;
+    left: 1460px;
+    height: 30px;
+    width: 320px;
+}
+
+.M{
+    position: absolute;
+    top: 500px;
+    left: 640px;
+    font-size: 20px;
+}
+
+.Mi{
+    position: absolute;
+    top: 550px;
+    left: 640px;
+    height: 30px;
+    width: 300px;
+}
+
+.h12{
+    position: absolute;
+    top: 600px;
+    background-color: whitesmoke;
+    width: 1280px;
+    left: 640px;
+}
+
+table{
+    position: absolute;
+    top: 680px;
+    width: 1300px;
+    left: 730px;
+    height: 200px;
+}

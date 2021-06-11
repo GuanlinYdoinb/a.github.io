@@ -1,0 +1,303 @@
+.topbar {
+    background-color: rgb(255, 236, 131);
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+#help {
+    border: rgba(255, 236, 131, 0.8);
+    background-color: rgb(255, 236, 131);
+    padding: 10.5px 10px;
+    position: absolute;
+    right: 625.672px;
+}
+
+#login {
+    border: rgba(255, 236, 131, 0.8);
+    background-color: rgba(255, 236, 131);
+    padding: 10.5px 10px;
+    position: absolute;
+    right: 567.063px;
+}
+
+#chart {
+    border: rgba(255, 236, 131, 0.8);
+    background-color: rgba(255, 0, 0);
+    padding: 10.5px 10px;
+    position: absolute;
+    right: 512px;
+}
+
+#help:hover {
+    background-color: snow;
+}
+
+#help:active {
+    background-color: tomato;
+    color: white;
+}
+#login:hover {
+    background-color: snow;
+}
+
+#login:active {
+    background-color: tomato;
+    color: white;
+}
+#chart:hover {
+    background-color: snow;
+}
+
+#chart:active {
+    background-color: tomato;
+    color: white;
+}
+
+.box1 {
+    background-color: whitesmoke;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    top: 40px;
+    left: 0px;
+    position: absolute;
+}
+
+.box1 img {
+    position: absolute;
+    height: 60px;
+    margin-top: 5px;
+    left: 512px;
+}
+
+.box1 input {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    margin-left: 1086px;
+    margin-top: 20px;
+}
+
+.box1 button {
+    position: absolute;
+    width: 70px;
+    height: 36px;
+    margin-left: 1410px;
+    margin-top: 20px;
+}
+
+.box2 {
+    position: absolute;
+    top: 110px;
+    left: 958.14px;
+    height: 40px;
+    width: 100%;
+
+}
+
+.box2 button {
+    height: 40px;
+    border: white;
+    background-color: white;
+}
+
+.box2 button:hover {
+    background-color: whitesmoke;
+}
+
+.box2 button:active {
+    background-color: lightgray;
+}
+
+#ad {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+}
+
+#instock {
+    position: absolute;
+    top: 600px;
+    width: 1280px;
+    left: 640px;
+}
+
+.box3 {
+    position: absolute;
+    top: 800px;
+    width: 1280px;
+    left: 640px;
+    height: 250px;
+}
+
+#left {
+    position: absolute;
+    width: 100px;
+    left: -20px;
+    top: 75px;
+}
+
+#right {
+    position: absolute;
+    width: 100px;
+    right: -25px;
+    top: 75px;
+}
+
+#a {
+    position: absolute;
+    left: 150px;
+    top: 41px;
+}
+
+#b {
+    position: absolute;
+    left: 547.5px;
+    top: 41px;
+}
+
+#c {
+    position: absolute;
+    left: 900px;
+    top: 41px;
+}
+
+.name1 {
+    position: absolute;
+    left: 350px;
+    top: 30px;
+}
+
+.price1 {
+    position: absolute;
+    left: 350px;
+    top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.name2 {
+    position: absolute;
+    left: 747.5px;
+    top: 30px;
+}
+
+.price2 {
+    position: absolute;
+    left: 747.5px;
+    top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.name3 {
+    position: absolute;
+    left: 1100px;
+    top: 30px;
+}
+
+.price3 {
+    position: absolute;
+    left: 1100px;
+    top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.box4 {
+    position: absolute;
+    width: 1280px;
+    top: 1050px;
+    left: 680px;
+}
+
+.p1 {
+    position: relative;
+    width: 600px;
+    left: 0px;
+}
+
+.p2 {
+    position: relative;
+    width: 600px;
+    margin-right: 0px;
+}
+.p3 {
+    position: relative;
+    top: 50px;
+    width: 600px;
+    left: 0px;
+}
+.p4 {
+    position: relative;
+    top: 50px;
+    width: 600px;
+    left: 0px;
+}
+.p5 {
+    position: relative;
+    top: 100px;
+    width: 600px;
+    left: 0px;
+}
+.p6 {
+    position: relative;
+    top: 100px;
+    width: 600px;
+    left: 0px;
+}
+
+.pn1 {
+    position: absolute;
+    top: 2700px;
+    left: 680px;
+    width: 600px;
+}
+
+.pn2 {
+    position: absolute;
+    top: 2700px;
+    left: 1280px;
+    width: 600px;
+}
+
+.pn3 {
+    position: absolute;
+    top: 3076px;
+    left: 680px;
+    width: 600px;
+}
+
+.fixedchart {
+    position: fixed;
+    width: 80px;
+    height: 50px;
+    right: 50px;
+    bottom: 100px;
+    background-color: orangered;
+    border: orangered;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.fixedchart:hover {
+    background-color: rgb(255, 236, 131);
+    color: black;
+}
+
+.fixedchart:active {
+    background-color: lightskyblue;
+    color: white;
+}

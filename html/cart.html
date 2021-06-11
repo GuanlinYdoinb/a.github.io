@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="../css/cart.css">
+	<meta charset="UTF-8">
+	<title>Fantastic Furniture Products & Cart</title>
+	<script type="text/javascript" src="../js/cart.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			//Bind the event to the button
+			$("input[value='Add to Cart']").click(function () {
+				//Find the td by the button, get all the brother td by td
+				//Get the first one inside
+				var name = $(this).parent().siblings().eq(0).text();
+				var price = $(this).parent().siblings().eq(1).text();
+				var tr = $("<tr></tr>");
+				//Add product name and unit price td
+				var nametd = $("<td></td");
+				nametd.text(name);
+				var pricetd = $("<td></td");
+				pricetd.text(price);
+
+				//Add purchase quantity td
+				var numtd = $("<td><input type='button' value='-' onclick='numfn(-1)'><span>1</span><input type='button' value='+' onclick='numfn(1)'></td");
+
+
+				//Added amount
+				var moneytd = $("<td></td");
+				moneytd.text(price);
+
+				//Add operation
+				var deltd = $("<td><input type='button' value='Delete'  onclick='delfn()'></td>");
+				//Add the trade name and unit price td to tr
+				tr.append(nametd);
+				tr.append(pricetd);
+				tr.append(numtd);
+				tr.append(moneytd);
+				tr.append(deltd);
+				//Load the tr into the table
+				$("#total").before(tr);
+				//Total calculation
+				calfn();
+			})
+		})
+		function delfn() {
+			var obj = event.target || event.srcElement;
+			//Get the tr corresponding to the button and delete it
+			$(obj).parent().parent().remove();
+			//Total calculation
+			calfn();
+		}
+		function numfn(x) {
+			//To get the original value
+			var obj = event.target || event.srcElement;
+			var oldCount = parseInt($(obj).siblings("span").text());
+			//Put the calculated value back in
+			var newCount = oldCount + x;
+			if (newCount <= 1) {
+				newCount = 1;
+			}
+			$(obj).siblings("span").text(newCount);
+			//Get the unit price
+			var price = $(obj).parent().prev().text();
+			//Modification amount
+			$(obj).parent().next().text(price * newCount);
+			//Total calculation
+			calfn();
+		}
+		//Method of calculating total price
+		function calfn() {
+			var total = 0;
+			//Get all the tr’s in the second table and go through them
+			$("table:last tr").each(function () {
+				//Find the fourth child (dollar td) from tr
+				var moneytd = $(this).children().eq(3);
+				//Get the amount from td
+				var money = parseFloat(moneytd.text());
+				//Exclude the first and last lines
+				if (!isNaN(money)) {
+					total += money;
+				}
+			})
+			//Display total price
+			$("#total>td").text("Total：" + "$" + total);
+		}
+	</script>
+</head>
+
+<body>
+	<!-- Top Bar -->
+	<div class="topbar">
+		<button id="help">Help</button>
+		<button id="login">Log In</button>
+		<button id="chart">Chart</button>
+	</div>
+
+	<!-- Search Bar & Logo-->
+	<div class="box1">
+		<a href="../html/Home Page.html"><img src="../cart img/Logo.png" alt="Oops!"></a>
+		<form action="form.js" method="GET">
+			<div>
+				<input type="text" name="searchinformation" placeholder="Search for Products">
+			</div>
+		</form>
+		<button>Search</button>
+	</div>
+
+	<!-- Navigation Bar-->
+	<div class="box2">
+		<button>New Arrival</button>
+		<button>Recommended</button>
+		<button>Ornament</button>
+		<button>Bedroom</button>
+		<button>Living Room</button>
+		<button>Kitchen</button>
+		<button>Diningroom</button>
+		<button>Bathroom</button>
+	</div>
+	<table id="picture">
+		<tr>
+			<td><a href="./Item Page 1.html"><img src="../cart img/Buttons Double Bed.jpg" alt="Oops!" id="p1"></a></td>
+		</tr>
+		<tr>
+			<td><a href="./Item Page 2.html"><img src="../cart img/Ashford Queen Bed.jpg" alt="Oops!" id="p2"></a></td>
+		</tr>
+		<tr>
+			<td><a href="./Item Page 3.html"><img src="../cart img/Toulon Double 4 Poster Bed.jpg" alt="Oops!" id="p3"></a></td>
+		</tr>
+		<tr>
+			<td><a href="./Item Page 4.html"><img src="../cart img/Bravo King Bed.jpg" alt="Oops!" id="p4"></a></td>
+		</tr>
+	</table>
+	<table id="productlist">
+		<tr>
+			<td>Buttons Double Bed</td>
+			<td>269</td>
+			<td>
+				<input type="button" value="Add to Cart" class="addtocart">
+			</td>
+		</tr>
+		<tr>
+			<td>Ashford Queen Bed</td>
+			<td>349</td>
+			<td>
+				<input type="button" value="Add to Cart" class="addtocart">
+			</td>
+		</tr>
+		<tr>
+			<td>Toulon Double 4 Poster Bed</td>
+			<td>269</td>
+			<td>
+				<input type="button" value="Add to Cart" class="addtocart">
+			</td>
+		</tr>
+		<tr>
+			<td>Bravo King Bed</td>
+			<td>359</td>
+			<td>
+				<input type="button" value="Add to Cart" class="addtocart">
+			</td>
+		</tr>
+	</table>
+	<h1>Cart</h1>
+	<table id="cart">
+		<tr>
+			<th>Product Name</th>
+			<th>Price</th>
+			<th>Amount</th>
+			<th>Subtotal</th>
+			<th>Operation</th>
+		</tr>
+		<tr id="total">
+			<td colspan="5">Total:$0</td>
+		</tr>
+	</table>
+	<a href="../html/Check Out.html"><button id="checkout">Check Out</button></a>
+</body>
+
+</html>
